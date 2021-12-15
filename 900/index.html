@@ -180,6 +180,12 @@
 				PLfile = "payloads/ToDex.bin";
 				LoadviaGoldhen(PLfile);
 			}
+			
+			function load_ArabicGuyMenu(){
+				progress.innerHTML="Payload Sending... Please Wait !!";
+				PLfile = "payloads/ArabicGuy-1.0-1.33-support_all_fw.bin";
+				LoadviaGoldhen(PLfile);
+			}
 
 			function load_WebRTE(){
 				progress.innerHTML="Payload Sending... Please Wait !!";
@@ -233,6 +239,8 @@
 					load_ToDex();
 				}else if(payload == "webrte"){
 					load_WebRTE();
+				}else if(payload == "arabicguymenu"){
+					load_ToDex();
 				}
 			}
 		</script>
@@ -278,6 +286,7 @@
 			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('enablebrowser'); return false" style="width:43%">Enable Browser</a>
 			<a href="#" class="button" onclick="load_payload('historyblocker'); return false" style="width:43%">History Blocker</a></td>
 			</tr>
+			<td align="center" colspan="2"><a href="#" class="button" onclick="load_payload('ArabicGuyMenu'); return false" style="width:43%">Arabic Guy Menu</a>
 			</table></div>
 	</body>
 </html>
